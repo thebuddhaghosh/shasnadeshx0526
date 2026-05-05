@@ -1,0 +1,122 @@
+@use '../../variable/variable' as *;
+@use '../../mixin/mixin' as *;
+
+.list-view-section {
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        @include place-center;
+        font-size: 28px;
+        border-radius: 8px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba($color: #000000, $alpha: 0.05);
+      }
+
+      h2 {
+        font-size: 22px;
+        font-weight: 700;
+        small {
+          font-size: 15px;
+          font-weight: 400;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  .filters {
+    display: flex;
+    gap: 15px;
+  }
+  .listing-wrapper {
+    margin-top: 20px;
+    .category-carousel {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 4px solid $white-color;
+      .cat {
+        background: #eee;
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        .title {
+          font-size: 18px;
+          display: block;
+          font-weight: 600;
+        }
+        .cat-subheading {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        &.active {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 18px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      .card-content {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        .icon {
+          @include place-center;
+          width: 80px;
+          height: 80px;
+          border-radius: 18px;
+          background-color: rgba($color: #000000, $alpha: 0.05);
+          margin-right: 15px;
+          i {
+            font-size: 40px;
+            color: $dark-color;
+          }
+        }
+        .title {
+          font-size: 18px;
+          margin: 6px 0;
+          font-weight: 600;
+        }
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          display: inline-flex;
+          align-items: baseline;
+          gap: 2px;
+          font-size: 14px;
+          color: rgba($color: #000000, $alpha: 0.5);
+        }
+      }
+      .actions {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/* Load More */
+.load-more {
+  text-align: center;
+  margin-top: 20px;
+  background: #ddd;
+  border-radius: 25px;
+  padding: 10px 30px;
+  padding-top: 12px;
+  display: inline-block;
+  cursor: pointer;
+}

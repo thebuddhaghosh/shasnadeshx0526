@@ -1,0 +1,23 @@
+@use '../../variable/variable' as *;
+a,
+button {
+  color: $text-color;
+  text-decoration: none;
+  &:hover {
+    color: $primary-color;
+  }
+}
+.guided-search {
+  background-color: $dark-blue;
+  color: #fff;
+}
+.btn {
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+.btn-primary {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

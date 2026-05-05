@@ -1,0 +1,72 @@
+@use '../../variable/variable' as *;
+
+header {
+  .top-header {
+    border-bottom: 1px solid $border-seprator;
+    padding: 6px 10px;
+    font-size: 14px;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 80%;
+      height: 100%;
+      top: 0;
+      left: 15%;
+      z-index: -1;
+      background-color: $border-seprator;
+      background: url('../../../img/tricolor.png');
+      background-repeat: no-repeat;
+      // background-size: 32%;
+    }
+  }
+  // background-color: lightblue;
+  .logo {
+    width: 180px;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $dark-color;
+        font-weight: 500;
+        padding: 10px 20px;
+        color: $text-color;
+        margin: 0 20px;
+        font-size: 15px;
+        &.active {
+          background-color: $primary-color;
+          color: white;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    .search-icon {
+      margin-right: 40px;
+      .nav-link {
+        display: grid;
+        place-items: center;
+        padding: 0;
+        border-radius: 8px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $border-color1;
+        font-size: 18px;
+      }
+    }
+  }
+  .partners-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      height: 45px;
+    }
+    .logo-seprator {
+      width: 1px;
+      background-color: $logo-seprator-color;
+      height: 30px;
+    }
+  }
+}
