@@ -1,0 +1,81 @@
+$primary-orange: #f57c00;
+$text-muted: #6c757d;
+$card-bg: #ffffff;
+$shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+.achievements {
+  // background: #f6f7f9;
+
+  .badge-pill {
+    display: inline-block;
+    background: #f3e5d8;
+    color: $primary-orange;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+
+  h2 {
+    color: #1f2d3d;
+  }
+
+  .stat-card {
+    background: $card-bg;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: $shadow;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 15px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 28px;
+      color: $primary-orange;
+      font-weight: 800;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #495057;
+    }
+
+    .growth {
+      color: #198754;
+      font-size: 14px;
+    }
+  }
+
+  /* Icon Colors */
+  .bg-blue {
+    background: #1e3a8a;
+  }
+
+  .bg-orange {
+    background: #f57c00;
+  }
+
+  .bg-green {
+    background: #2e7d32;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(135deg, #1e3a8a, #f57c00) !important;
+  }
+}

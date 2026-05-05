@@ -29,3 +29,32 @@ section {
   height: 1px;
   background-color: $border-seprator;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+.flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+.placeholder {
+  color: $placeholder-color;
+}
+.place-center {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.cat,
+.card {
+  transition: 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
