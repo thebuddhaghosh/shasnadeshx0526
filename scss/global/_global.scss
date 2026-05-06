@@ -58,3 +58,32 @@ section {
     transform: translateY(-5px);
   }
 }
+
+.new-tabbed-view {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 110px;
+    top: 40px;
+    left: 20px;
+    z-index: -1;
+    background: url(../../img/textureleft.png) no-repeat;
+    opacity: 0.5;
+  }
+}
+.list-view-section {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 136px;
+    height: 54px;
+    top: -25px;
+    right: 10px;
+    z-index: 0;
+    background: url(../../img/textureright.png) no-repeat;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,6 @@
+@use '../variable/variable' as *;
+@use '../mixin/mixin' as *;
+
+/* ----------- tablet screen ----------- */
+@media only screen and (max-width: $screen-md) {
+}

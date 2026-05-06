@@ -1,0 +1,24 @@
+@use '../../variable/variable' as *;
+@use '../../mixin/mixin' as *;
+
+.form {
+  &-group {
+    margin-bottom: 20px;
+  }
+  &-control {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid $border-color1;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    &::placeholder {
+      color: $placeholder-color;
+    }
+    &:focus {
+      border-color: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}

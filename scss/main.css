@@ -66,6 +66,36 @@ section {
   transform: translateY(-5px);
 }
 
+.new-tabbed-view {
+  position: relative;
+}
+.new-tabbed-view::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 110px;
+  top: 40px;
+  left: 20px;
+  z-index: -1;
+  background: url(../../img/textureleft.png) no-repeat;
+  opacity: 0.5;
+}
+
+.list-view-section {
+  position: relative;
+}
+.list-view-section::after {
+  content: "";
+  position: absolute;
+  width: 136px;
+  height: 54px;
+  top: -25px;
+  right: 10px;
+  z-index: 0;
+  background: url(../../img/textureright.png) no-repeat;
+  opacity: 0.5;
+}
+
 header .top-header {
   border-bottom: 1px solid #f0f0f0;
   padding: 6px 10px;
@@ -131,6 +161,7 @@ header .partners-wrapper .logo-seprator {
 
 a,
 button {
+  font-size: 15px;
   color: #5f616f;
   text-decoration: none;
 }
@@ -145,6 +176,7 @@ button:hover {
 }
 
 .btn {
+  font-size: 15px;
   padding: 8px 20px;
   border-radius: 10px;
 }
@@ -154,6 +186,29 @@ button:hover {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d6dce7;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+.form-control::-moz-placeholder {
+  color: #adb5bd;
+}
+.form-control::placeholder {
+  color: #adb5bd;
+}
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .hero-section {
@@ -170,13 +225,13 @@ button:hover {
   margin-top: 80px;
 }
 .hero-section .global-search .input-group {
+  border: 1px solid #d6dce7;
   overflow: hidden;
   border-radius: 350px !important;
 }
 .hero-section .global-search .input-group::after {
   content: "";
   position: absolute;
-  display: block;
   width: 100%;
   height: 100%;
   top: 0;
@@ -184,12 +239,35 @@ button:hover {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
 }
+.hero-section .global-search .input-group::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(255, 0, 0);
+}
+.hero-section .global-search .input-group .mic-search {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  position: relative;
+  right: 8px;
+  color: #fff;
+  border-radius: 8px !important;
+  background-color: #fa8a18 !important;
+}
 .hero-section .global-search .guided-search {
   border: none;
 }
 .hero-section .global-search .form-control,
 .hero-section .global-search .input-group-text {
-  height: 50px;
+  height: 60px;
+  border: none !important;
   z-index: 2;
 }
 .hero-section .global-search .form-control {
@@ -325,6 +403,7 @@ button:hover {
   border-radius: 18px;
   background-color: rgba(0, 0, 0, 0.05);
   margin-right: 15px;
+  flex: 0 0 80px;
 }
 .list-view-section .listing-wrapper .card .card-content .icon i {
   font-size: 40px;
@@ -359,11 +438,13 @@ button:hover {
   margin-top: 10px;
 }
 .list-view-section .listing-wrapper .card .actions .btn {
+  font-size: 14px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
   justify-content: center;
-  padding: 4px 18px;
+  padding: 4px 10px;
 }
 .list-view-section .listing-wrapper .card .actions .btn .text {
   display: block;
@@ -426,6 +507,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   font-size: 28px;
+  flex: 0 0 60px;
 }
 .new-tabbed-view .order-card .content .badge-new {
   background: #28a745;
@@ -645,4 +727,29 @@ button:hover {
 }
 .footer-section .footer-bottom {
   background: #1f1c1a;
-}/*# sourceMappingURL=main.css.map */
+}
+
+body.en {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+body.en .hero-section .hero-content {
+  width: 65%;
+}
+body.en .new-tabbed-view .order-card .content .order-title {
+  line-height: 1.2;
+}
+body.en .list-view-section .listing-wrapper .card .card-content .title {
+  font-size: 15px;
+}
+body.en .list-view-section .listing-wrapper .card .card-content .content .meta span {
+  font-size: 12px;
+}
+body.en .list-view-section .listing-wrapper .card .actions .btn .text {
+  margin: 0;
+}
+
+/* ----------- tablet screen ----------- */
+/* ----------- tablet screen ----------- */
+/* ----------- tablet screen ----------- */
+/* ----------- tablet screen ----------- *//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+@use '../../variable/variable' as *;
+@use '../../mixin/mixin' as *;
+
+body {
+  &.en {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    .hero-section {
+      .hero-content {
+        width: 65%;
+      }
+    }
+
+    // ----- listing section -----
+    .new-tabbed-view .order-card .content .order-title {
+      line-height: 1.2;
+    }
+    // ----- listing section -----
+    .list-view-section {
+      .listing-wrapper {
+        .card {
+          .card-content {
+            .title {
+              font-size: 15px;
+            }
+            .content {
+              .meta {
+                span {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .actions {
+            .btn {
+              .text {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
