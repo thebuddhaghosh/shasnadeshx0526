@@ -87,9 +87,9 @@
           <form action="#" class="global-search">
             <div class="input-group mb-3">
               <i class="fas fa-search absolute-search-icon"></i>
-              <input type="text" class="form-control bg-transparent" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="basic-addon2" />
+              <input type="text" class="form-control bg-transparent" placeholder="शासनादेश , परिपत्र और आधिकारिक दस्तावेज खोजें " />
               <span class="input-group-text bg-transparent mic-search"><i class="fa-solid fa-microphone"></i></span>
-              <span class="input-group-text d-flex align-items-center gap-2 px-4 guided-search" id="basic-addon2"><i class="fa-regular fa-circle-question"></i>गाइडेड सर्च </span>
+              <span class="input-group-text d-flex align-items-center gap-2 px-4 guided-search" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-circle-question"></i>गाइडेड सर्च </span>
             </div>
           </form>
         </div>
@@ -106,7 +106,7 @@
           <!-- Cards -->
           <div class="row g-4">
             <!-- Card -->
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="order-card">
                 <div class="icon-box">📄</div>
                 <div class="content">
@@ -123,7 +123,7 @@
             </div>
 
             <!-- Repeat -->
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="order-card">
                 <div class="icon-box">📄</div>
                 <div class="content">
@@ -140,7 +140,7 @@
             </div>
 
             <!-- Repeat -->
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="order-card">
                 <div class="icon-box">📄</div>
                 <div class="content">
@@ -197,7 +197,7 @@
             </div>
 
             <div class="row g-4 my-2 mb-4">
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -226,7 +226,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -255,7 +255,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -284,7 +284,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -313,7 +313,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -342,7 +342,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -535,20 +535,23 @@
           <div class="row g-4">
             <!-- Left Info -->
             <div class="col-lg-4 col-md-6">
-              <div class="d-flex align-items-center mb-3">
+              <div class="logo-footer">
+                <img src="../img/logo-invert.png" alt="logo-darpan" class="img-fluid" />
+              </div>
+              <!-- <div class="d-flex align-items-center mb-3">
                 <div class="logo-circle">उ.प्र.</div>
                 <div class="ms-2">
                   <h6 class="mb-0 fw-bold">शासनादेश पोर्टल</h6>
                   <small>उत्तर प्रदेश सरकार</small>
                 </div>
-              </div>
+              </div> -->
 
-              <p class="small text-muted">उत्तर प्रदेश सरकार की आधिकारिक शासनादेश सेवा। सभी विभागों के शासनादेश, परिपत्र और अधिसूचनाएं एक ही स्थान पर।</p>
+              <p class="small text-light">उत्तर प्रदेश सरकार की आधिकारिक शासनादेश सेवा। सभी विभागों के शासनादेश, परिपत्र और अधिसूचनाएं एक ही स्थान पर।</p>
 
-              <ul class="list-unstyled small">
-                <li><i class="bi bi-geo-alt"></i> सचिवालय भवन, लखनऊ, उत्तर प्रदेश - 226001</li>
-                <li><i class="bi bi-telephone"></i> 1800-180-5678 (टोल फ्री)</li>
-                <li><i class="bi bi-envelope"></i> support@up.gov.in</li>
+              <ul class="list-unstyled small mt-3">
+                <li><i class="fa-solid fa-location-dot"></i> सचिवालय भवन, लखनऊ, उत्तर प्रदेश - 226001</li>
+                <li><i class="fa-solid fa-phone"></i> 1800-180-5678 (टोल फ्री)</li>
+                <li><i class="fa-solid fa-envelope"></i> support@up.gov.in</li>
               </ul>
             </div>
 
@@ -593,29 +596,29 @@
               <h6 class="fw-bold">नीतियां</h6>
               <ul class="list-unstyled small">
                 <li><a href="#">गोपनीयता नीति</a></li>
-                <li><a href="#">उपयोग की शर्तें</a></li>
-                <li><a href="#">अस्वीकरण</a></li>
-                <li><a href="#">कॉपीराइट नीति</a></li>
+                <li><a href="terms.html">उपयोग की शर्तें</a></li>
+                <li><a href="Privacy_Policy.html">अस्वीकरण</a></li>
+                <li><a href="Copyright_Policy.html">कॉपीराइट नीति</a></li>
                 <li><a href="#">सुलभता</a></li>
               </ul>
             </div>
           </div>
 
-          <hr class="my-4" />
+          <hr class="my-2 mb-3" />
 
           <!-- Bottom -->
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
             <div class="social-icons mb-3 mb-md-0">
               <span class="me-2">हमें फॉलो करें:</span>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-              <a href="#"><i class="bi bi-globe"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-solid fa-earth-asia"></i></a>
             </div>
 
             <div class="small text-muted">
-              <a href="#" class="me-3">UP.GOV.IN</a>
-              <a href="#">INDIA.GOV.IN</a>
+              <a href="#" class="me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i> UP.GOV.IN</a>
+              <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> INDIA.GOV.IN</a>
             </div>
           </div>
         </div>
@@ -624,6 +627,93 @@
         </div>
       </footer>
     </main>
+    <!-- ====================== modal ========================= -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">गाइडेड सर्च</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="exampleInputEmail1" class="form-label">विभाग</label>
+                  <select name="dep" id="" class="form-select">
+                    <option value="">सभी विभाग</option>
+                    <option value="1">गृह विभाग</option>
+                    <option value="2">वित्त विभाग</option>
+                    <option value="3">शिक्षा विभाग</option>
+                    <option value="4">स्वास्थ्य विभाग</option>
+                    <option value="5">कृषि विभाग</option>
+                    <option value="6">परिवहन विभाग</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="exampleInputPassword1" class="form-label">अनुभाग</label>
+                  <select name="type" id="" class="form-select">
+                    <option value="">सभी प्रकार</option>
+                    <option value="1">परिपत्र</option>
+                    <option value="2">शासनादेश</option>
+                    <option value="3">आधिकारिक दस्तावेज</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="exampleInputPassword1" class="form-label">श्रेणी</label>
+                  <select name="type" id="" class="form-select">
+                    <option value="">सभी श्रेणी</option>
+                    <option value="1">सामान्य प्रशासन</option>
+                    <option value="2">वित्त</option>
+                    <option value="3">शिक्षा</option>
+                    <option value="4">स्वास्थ्य</option>
+                    <option value="5">कृषि</option>
+                    <option value="6">परिवहन</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">शासनादेश संख्या</label>
+                  <input type="text" class="form-control" placeholder="342/2026/आई/1319084/23-1-26/002-23-1002(002)/240/2026 " />
+                </div>
+                <div class="col-md-3">
+                  <label for="exampleInputPassword1" class="form-label">शासनादेश तिथि से </label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                  <label for="exampleInputPassword1" class="form-label">शासनादेश तिथि तक</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-md-12">
+                  <label for="exampleInputPassword1" class="form-label">खोज शब्द समूह</label>
+                  <input type="text" class="form-control" placeholder="शासनादेश , परिपत्र और आधिकारिक दस्तावेज खोजें " />
+                </div>
+                <div class="col-md-4">
+                  <label for="exampleInputPassword1" class="form-label">कृपया दिए गए अंको को बॉक्स में अंकित करें।</label>
+                  <div class="d-flex gap-2 align-items-center mb-3">
+                    <div class="captcha-box flex-grow-1">
+                      <div class="captcha-noise"></div>
+                      <div class="captcha-text" id="captchaText">X7K9P</div>
+                    </div>
+
+                    <button class="refresh-btn" id="refreshCaptcha">↻</button>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control mt-4" placeholder="कृपया दिए गए अंको को बॉक्स में अंकित करें" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">बंद करें</button>
+            <button type="button" class="btn btn-primary">शासनादेश खोजें</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====================== modal ========================= -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>

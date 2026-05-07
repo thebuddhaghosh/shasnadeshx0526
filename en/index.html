@@ -89,7 +89,7 @@
               <i class="fas fa-search absolute-search-icon"></i>
               <input type="text" class="form-control bg-transparent" placeholder="Search for Government Orders, Circulars, and Departments" aria-label="Recipient’s username" aria-describedby="basic-addon2" />
               <span class="input-group-text mic-search"><i class="fa-solid fa-microphone"></i></span>
-              <span class="input-group-text d-flex align-items-center gap-2 px-4 guided-search" id="basic-addon2"><i class="fa-regular fa-circle-question"></i>Guided Search </span>
+              <span class="input-group-text d-flex align-items-center gap-2 px-4 guided-search" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-circle-question"></i>Guided Search </span>
             </div>
           </form>
         </div>
@@ -103,10 +103,8 @@
             <button class="btn btn-inactive">Most Downloaded Government Orders</button>
           </div>
 
-          <!-- Cards -->
           <div class="row g-4">
-            <!-- Card -->
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="order-card">
                 <div class="icon-box">📄</div>
                 <div class="content">
@@ -122,8 +120,7 @@
               </div>
             </div>
 
-            <!-- Repeat -->
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="order-card">
                 <div class="icon-box">📄</div>
                 <div class="content">
@@ -139,8 +136,7 @@
               </div>
             </div>
 
-            <!-- Repeat -->
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="order-card">
                 <div class="icon-box">📄</div>
                 <div class="content">
@@ -197,7 +193,7 @@
             </div>
 
             <div class="row g-4 my-2 mb-4">
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -226,7 +222,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -255,7 +251,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -284,7 +280,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -313,7 +309,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -342,7 +338,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-12">
                 <div class="card">
                   <div class="card-content">
                     <div class="icon">
@@ -378,7 +374,9 @@
           </div>
         </div>
       </section>
+
       <!-- listing view section ends -->
+
       <section class="achievements py-5">
         <div class="container text-center">
           <!-- Tag -->
@@ -388,10 +386,8 @@
           <h2 class="fw-bold mb-2">Our Achievements</h2>
           <p class="text-muted mb-5">Uttar Pradesh Government Portal is India's largest government document portal</p>
 
-          <!-- Cards -->
           <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="stat-card">
                 <div class="icon bg-blue">
                   <i class="fa fa-building"></i>
@@ -402,8 +398,7 @@
               </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="stat-card">
                 <div class="icon bg-orange">
                   <i class="fa fa-building"></i>
@@ -414,8 +409,7 @@
               </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="stat-card">
                 <div class="icon bg-green">
                   <i class="fa fa-building"></i>
@@ -426,8 +420,7 @@
               </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-lg-3 col-md-6">
               <div class="stat-card">
                 <div class="icon bg-gradient">
                   <i class="fa fa-building"></i>
@@ -442,6 +435,7 @@
       </section>
 
       <!-- achievements section ends -->
+
       <section class="quick-services py-5">
         <div class="container text-center">
           <!-- Heading -->
@@ -528,27 +522,30 @@
           </div>
         </div>
       </section>
+
       <!-- quick services section ends -->
 
       <footer class="footer-section text-light pt-5">
         <div class="container">
           <div class="row g-4">
-            <!-- Left Info -->
             <div class="col-lg-4 col-md-6">
-              <div class="d-flex align-items-center mb-3">
+              <div class="logo-footer">
+                <img src="../img/logo-invert.png" alt="logo-darpan" class="img-fluid" />
+              </div>
+              <!-- <div class="d-flex align-items-center mb-3">
                 <div class="logo-circle">UP</div>
                 <div class="ms-2">
                   <h6 class="mb-0 fw-bold">Gazette Portal</h6>
                   <small>Government of Uttar Pradesh</small>
                 </div>
-              </div>
+              </div> -->
 
-              <p class="small text-muted">Official Gazette Service of the Government of Uttar Pradesh. All departments' gazettes, circulars and notifications in one place.</p>
+              <p class="small text-light">Official Gazette Service of the Government of Uttar Pradesh. All departments' gazettes, circulars and notifications in one place.</p>
 
-              <ul class="list-unstyled small">
-                <li><i class="bi bi-geo-alt"></i> Secretariat Building, Lucknow, Uttar Pradesh - 226001</li>
-                <li><i class="bi bi-telephone"></i> 1800-180-5678 (Toll Free)</li>
-                <li><i class="bi bi-envelope"></i> support@up.gov.in</li>
+              <ul class="list-unstyled small mt-3">
+                <li><i class="fa-solid fa-location-dot"></i> Secretariat Building, Lucknow, Uttar Pradesh - 226001</li>
+                <li><i class="fa-solid fa-phone"></i> 1800-180-5678 (Toll Free)</li>
+                <li><i class="fa-solid fa-envelope"></i> support@up.gov.in</li>
               </ul>
             </div>
 
@@ -592,18 +589,17 @@
             <div class="col-lg-2 col-md-6">
               <h6 class="fw-bold">Policies</h6>
               <ul class="list-unstyled small">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
+                <li><a href="../Privacy_Policy.html">Privacy Policy</a></li>
+                <li><a href="../terms.html">Terms of Use</a></li>
                 <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="../Copyright_Policy.html">Copyright Policy</a></li>
                 <li><a href="#">Accessibility</a></li>
               </ul>
             </div>
           </div>
 
-          <hr class="my-4" />
+          <hr class="my-2 mb-3" />
 
-          <!-- Bottom -->
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
             <div class="social-icons mb-3 mb-md-0">
               <span class="me-2">Follow Us:</span>
@@ -624,6 +620,90 @@
         </div>
       </footer>
     </main>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Guided Search</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                  <label for="exampleInputEmail1" class="form-label">Department Name</label>
+                  <select name="dep" id="" class="form-select">
+                    <option value="">All Departments</option>
+                    <option value="1">Home Department</option>
+                    <option value="2">Finance Department</option>
+                    <option value="3">Education Department</option>
+                    <option value="4">Health Department</option>
+                    <option value="5">Agriculture Department</option>
+                    <option value="6">Transport Department</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">Section</label>
+                  <select name="type" id="" class="form-select">
+                    <option value="">All Types</option>
+                    <option value="1">Circular</option>
+                    <option value="2">Government Order</option>
+                    <option value="3">Official Document</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">Category</label>
+                  <select name="type" id="" class="form-select">
+                    <option value="">All Categories</option>
+                    <option value="1">General Administration</option>
+                    <option value="2">Finance</option>
+                    <option value="3">Education</option>
+                    <option value="4">Health</option>
+                    <option value="5">Agriculture</option>
+                    <option value="6">Transport</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">GO Number</label>
+                  <input type="text" class="form-control" placeholder="342/2026/आई/1319084/23-1-26/002-23-1002(002)/240/2026 " />
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">GO Date From</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">GO Date To</label>
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="col-md-12">
+                  <label for="exampleInputPassword1" class="form-label">Search Keywords</label>
+                  <input type="text" class="form-control" placeholder="Search for Gazettes, Circulars and Official Documents" />
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="exampleInputPassword1" class="form-label">Enter CAPTCHA Code.</label>
+                  <div class="d-flex gap-2 align-items-center mb-3">
+                    <div class="captcha-box flex-grow-1">
+                      <div class="captcha-noise"></div>
+                      <div class="captcha-text" id="captchaText">X7K9P</div>
+                    </div>
+
+                    <button class="refresh-btn" id="refreshCaptcha">↻</button>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                  <input type="text" class="form-control mt-4" placeholder="Enter the characters here you see in the box." />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Search Gazette</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>

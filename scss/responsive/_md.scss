@@ -3,4 +3,25 @@
 
 /* ----------- tablet screen ----------- */
 @media only screen and (max-width: $screen-md) {
+  .hero-section {
+    height: unset;
+    .cmo-details {
+      position: static;
+      top: unset;
+      right: unset;
+    }
+    .hero-content {
+      position: static;
+      top: unset;
+      left: unset;
+      transform: unset;
+      width: 100%;
+    }
+    .global-search {
+      width: 100%;
+    }
+  }
+  body.en .hero-section .hero-content {
+    width: 100%;
+  }
 }

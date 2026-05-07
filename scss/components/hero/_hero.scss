@@ -4,6 +4,7 @@
   height: 87vh;
   background: url('../../../img/hero.png') no-repeat;
   background-size: cover;
+  background-position: center;
   display: grid;
   place-items: center;
   .global-search {
@@ -29,11 +30,12 @@
         content: '';
         position: absolute;
         width: 10px;
-        height: 100%;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        background-color: rgb(255, 0, 0);
+        height: 90%;
+        top: 2px;
+        right: 135px;
+        z-index: 2;
+        // rotate: 90deg;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(154, 235, 152, 1) 10%, rgba(13, 161, 5, 1) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 157, 0, 1) 60%, rgba(255, 192, 84, 1) 90%, rgba(255, 255, 255, 1) 100%);
       }
       .mic-search {
         @include place-center;
