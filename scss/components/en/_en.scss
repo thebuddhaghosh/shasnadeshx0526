@@ -9,6 +9,13 @@ body {
       .hero-content {
         width: 65%;
       }
+      .global-search {
+        .input-group {
+          &::before {
+            right: 175px;
+          }
+        }
+      }
     }
 
     // ----- listing section -----
