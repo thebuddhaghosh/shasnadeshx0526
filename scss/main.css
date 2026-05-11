@@ -801,6 +801,105 @@ button:hover {
   background: #1f1c1a;
 }
 
+.search-result-section .section-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.search-result-section .subtext {
+  font-size: 14px;
+  color: #5f616f;
+}
+.search-result-section .card {
+  border: 1px solid #f5f5f5;
+  background: #fff;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+.search-result-section .card .card-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search-result-section .card .card-content .icon {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-right: 15px;
+  flex: 0 0 80px;
+}
+.search-result-section .card .card-content .icon i {
+  font-size: 40px;
+  color: #343a40;
+}
+.search-result-section .card .card-content .title {
+  font-size: 18px;
+  margin: 6px 0;
+  font-weight: 600;
+}
+.search-result-section .card .meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-result-section .card .meta span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.search-result-section .card .meta span.new-badge {
+  padding-top: 6px;
+}
+.search-result-section .card .btn-outline-secondary {
+  border: 1px solid #f0f0f0;
+}
+.search-result-section .card .actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.search-result-section .card .actions .btn {
+  font-size: 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 4px 10px;
+}
+.search-result-section .card .actions .btn .text {
+  display: block;
+  margin-top: 4px;
+}
+
+.search-form {
+  padding-bottom: 14px;
+}
+.search-form .form-group {
+  margin-bottom: 0;
+  position: relative;
+}
+.search-form .form-group .form-control {
+  padding: 16px 20px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 44px;
+  transition: border-color 0.3s ease;
+}
+.search-form .form-group .search-icon {
+  top: 55%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #5f616f;
+  font-size: 16px;
+  border: none;
+}
+
 body.en {
   font-family: "Nunito", sans-serif;
   font-size: 15px;

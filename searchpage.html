@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Result Page Shasnadesh</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg top-header">
+        <div class="container">
+          <div class="top-header-left d-flex align-items-center gap-3">
+            <span class="top-header-text d-flex align-items-center gap-2"><i class="fas fa-phone-alt" style="rotate: 90deg"></i>1800-180-5678</span>
+            <span class="top-header-text d-flex align-items-center gap-2"><i class="fas fa-envelope"></i>support@up.gov.in</span>
+          </div>
+          <div class="top-header-right d-flex align-items-center gap-2">
+            <i class="fa-solid fa-globe"></i>
+            <a href="index.html" class="top-header-link"> हिंदी</a>
+            <span class="top-header-seprator">|</span>
+            <a href="en/index.html" class="top-header-link">English</a>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">
+            <img src="img/logo.png" class="img-fluid" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">मुख्य पृष्ठ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">शासनादेश</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">विभाग</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">सांख्यिकी</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">संपर्क</a>
+              </li>
+              <li class="nav-item search-icon">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+              </li>
+            </ul>
+            <div class="partners-wrapper">
+              <img src="img/itu.png" class="img-fluid" alt="uttar pradesh government seal" />
+              <span class="logo-seprator"></span>
+              <img src="img/ituwtsa.png" class="img-fluid" alt="uttar pradesh government seal" />
+              <span class="logo-seprator"></span>
+              <img src="img/sealUp.png" class="img-fluid" alt="uttar pradesh government seal" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="seprator"></div>
+      <!-- top header ends -->
+    </header>
+
+    <main>
+      <section class="page-heading-section bg-light text-center">
+        <div class="container">
+          <h1 class="page-heading">शासनादेश खोजें</h1>
+          <nav class="d-inline-block mx-auto" aria-label="breadcrumb ">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">मुख्य पृष्ठ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">शासनादेश खोजें</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section class="search-result-section py-5">
+        <div class="container">
+          <form action="" class="form search-form">
+            <div class="form-group">
+              <input type="text" id="searchQuery" class="form-control" placeholder="शासनादेश शीर्षक, विभाग, तिथि आदि से खोजें..." />
+              <button type="submit" class="btn bg-transparent position-absolute search-icon"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+          <h2 class="section-title mb-1">खोज परिणाम</h2>
+          <p class="subtext mb-4">आपके खोज मानदंडों के अनुसार <strong class="text-info">25</strong> शासनादेश मिले।</p>
+        </div>
+        <div class="seprator my-3"></div>
+        <div class="container">
+          <div class="search-results-list">
+            <div class="row g-4 my-2 mb-4">
+              <div class="col-lg-6 col-md-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="fa fa-file-lines"></i>
+                    </div>
+                    <div class="content">
+                      <div class="meta">
+                        <span class="category">शासनादेश</span>
+                        <span class="badge bg-success rounded-pill px-3 text-white new-badge"> नया</span>
+                        <span class="badge-text"> संख्या -32/2025/ग-1/शा-स-अ</span>
+                      </div>
+                      <h4 class="title">राज्य कर्मचारियों के महंगाई भत्ते में वृद्धि के संबंध में</h4>
+
+                      <div class="meta">
+                        <span><i class="fa fa-building"></i> वित्त विभाग </span>
+                        <span><i class="fa fa-calendar"></i> 28 जनवरी 2025</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-eye"></i> <span class="text">देखें</span></button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> <span class="text">डाउनलोड</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="fa fa-file-lines"></i>
+                    </div>
+                    <div class="content">
+                      <div class="meta">
+                        <span class="category">शासनादेश</span>
+                        <span class="badge bg-success rounded-pill px-3 text-white new-badge"> नया</span>
+                        <span class="badge-text"> संख्या -32/2025/ग-1/शा-स-अ</span>
+                      </div>
+                      <h4 class="title">राज्य कर्मचारियों के महंगाई भत्ते में वृद्धि के संबंध में</h4>
+
+                      <div class="meta">
+                        <span><i class="fa fa-building"></i> वित्त विभाग </span>
+                        <span><i class="fa fa-calendar"></i> 28 जनवरी 2025</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-eye"></i> <span class="text">देखें</span></button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> <span class="text">डाउनलोड</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="fa fa-file-lines"></i>
+                    </div>
+                    <div class="content">
+                      <div class="meta">
+                        <span class="category">शासनादेश</span>
+                        <span class="badge bg-success rounded-pill px-3 text-white new-badge"> नया</span>
+                        <span class="badge-text"> संख्या -32/2025/ग-1/शा-स-अ</span>
+                      </div>
+                      <h4 class="title">राज्य कर्मचारियों के महंगाई भत्ते में वृद्धि के संबंध में</h4>
+
+                      <div class="meta">
+                        <span><i class="fa fa-building"></i> वित्त विभाग </span>
+                        <span><i class="fa fa-calendar"></i> 28 जनवरी 2025</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-eye"></i> <span class="text">देखें</span></button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> <span class="text">डाउनलोड</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="fa fa-file-lines"></i>
+                    </div>
+                    <div class="content">
+                      <div class="meta">
+                        <span class="category">शासनादेश</span>
+                        <span class="badge bg-success rounded-pill px-3 text-white new-badge"> नया</span>
+                        <span class="badge-text"> संख्या -32/2025/ग-1/शा-स-अ</span>
+                      </div>
+                      <h4 class="title">राज्य कर्मचारियों के महंगाई भत्ते में वृद्धि के संबंध में</h4>
+
+                      <div class="meta">
+                        <span><i class="fa fa-building"></i> वित्त विभाग </span>
+                        <span><i class="fa fa-calendar"></i> 28 जनवरी 2025</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-eye"></i> <span class="text">देखें</span></button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> <span class="text">डाउनलोड</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="fa fa-file-lines"></i>
+                    </div>
+                    <div class="content">
+                      <div class="meta">
+                        <span class="category">शासनादेश</span>
+                        <span class="badge bg-success rounded-pill px-3 text-white new-badge"> नया</span>
+                        <span class="badge-text"> संख्या -32/2025/ग-1/शा-स-अ</span>
+                      </div>
+                      <h4 class="title">राज्य कर्मचारियों के महंगाई भत्ते में वृद्धि के संबंध में</h4>
+
+                      <div class="meta">
+                        <span><i class="fa fa-building"></i> वित्त विभाग </span>
+                        <span><i class="fa fa-calendar"></i> 28 जनवरी 2025</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-eye"></i> <span class="text">देखें</span></button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> <span class="text">डाउनलोड</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="fa fa-file-lines"></i>
+                    </div>
+                    <div class="content">
+                      <div class="meta">
+                        <span class="category">शासनादेश</span>
+                        <span class="badge bg-success rounded-pill px-3 text-white new-badge"> नया</span>
+                        <span class="badge-text"> संख्या -32/2025/ग-1/शा-स-अ</span>
+                      </div>
+                      <h4 class="title">राज्य कर्मचारियों के महंगाई भत्ते में वृद्धि के संबंध में</h4>
+
+                      <div class="meta">
+                        <span><i class="fa fa-building"></i> वित्त विभाग </span>
+                        <span><i class="fa fa-calendar"></i> 28 जनवरी 2025</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                        <span><i class="fa fa-eye"></i> 15,420</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <button class="btn btn-outline-secondary"><i class="fa fa-eye"></i> <span class="text">देखें</span></button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i> <span class="text">डाउनलोड</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-section text-light pt-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Left Info -->
+            <div class="col-lg-4 col-md-6">
+              <div class="logo-footer">
+                <img src="../img/logo-invert.png" alt="logo-darpan" class="img-fluid" />
+              </div>
+
+              <p class="small text-light">उत्तर प्रदेश सरकार की आधिकारिक शासनादेश सेवा। सभी विभागों के शासनादेश, परिपत्र और अधिसूचनाएं एक ही स्थान पर।</p>
+
+              <ul class="list-unstyled small mt-3">
+                <li><i class="fa-solid fa-location-dot"></i> सचिवालय भवन, लखनऊ, उत्तर प्रदेश - 226001</li>
+                <li><i class="fa-solid fa-phone"></i> 1800-180-5678 (टोल फ्री)</li>
+                <li><i class="fa-solid fa-envelope"></i> support@up.gov.in</li>
+              </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+              <h6 class="fw-bold">त्वरित लिंक</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#">मुख्य पृष्ठ</a></li>
+                <li><a href="#">शासनादेश खोजें</a></li>
+                <li><a href="#">विभाग सूची</a></li>
+                <li><a href="#">अधिसूचनाएं</a></li>
+                <li><a href="#">परिपत्र</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-2 col-md-6">
+              <h6 class="fw-bold">सेवाएं</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#">पंजीकरण करें</a></li>
+                <li><a href="#">लॉगिन</a></li>
+                <li><a href="#">ई-सेवाएं</a></li>
+                <li><a href="#">मोबाइल ऐप</a></li>
+                <li><a href="#">API सेवाएं</a></li>
+              </ul>
+            </div>
+
+            <!-- Help -->
+            <div class="col-lg-2 col-md-6">
+              <h6 class="fw-bold">सहायता</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#">सहायता केंद्र</a></li>
+                <li><a href="#">अक्सर पूछे जाने वाले प्रश्न</a></li>
+                <li><a href="#">उपयोगकर्ता मार्गदर्शिका</a></li>
+                <li><a href="#">शिकायत दर्ज करें</a></li>
+                <li><a href="#">संपर्क करें</a></li>
+              </ul>
+            </div>
+
+            <!-- Policies -->
+            <div class="col-lg-2 col-md-6">
+              <h6 class="fw-bold">नीतियां</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#">गोपनीयता नीति</a></li>
+                <li><a href="terms.html">उपयोग की शर्तें</a></li>
+                <li><a href="Privacy_Policy.html">अस्वीकरण</a></li>
+                <li><a href="Copyright_Policy.html">कॉपीराइट नीति</a></li>
+                <li><a href="#">सुलभता</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-2 mb-3" />
+
+          <!-- Bottom -->
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+            <div class="social-icons mb-3 mb-md-0">
+              <span class="me-2">हमें फॉलो करें:</span>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-solid fa-earth-asia"></i></a>
+            </div>
+
+            <div class="small text-muted">
+              <a href="#" class="me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i> UP.GOV.IN</a>
+              <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> INDIA.GOV.IN</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom py-2">
+          <div class="container text-center mt-3 small text-white">© 2025 शासनादेश पोर्टल, उत्तर प्रदेश सरकार | सर्वाधिकार सुरक्षित | विकास एवं डिजाइन: <span class="text-warning">राष्ट्रीय सूचना विज्ञान केंद्र (NIC)</span></div>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/myjs.js"></script>
+  </body>
+</html>
